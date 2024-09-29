@@ -1,0 +1,68 @@
+[versions]
+applicationId = "cn.beluga.bilibili_neko"
+minSdk = "24"
+targetSdk = "34"
+versionCode = "1"
+versionName = "1.0"
+namespace = "cn.beluga.bilibili_neko"
+compileSdk = "34"
+agp = "8.5.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+retrofitVersion = "2.10.0"
+gsonVersion = "2.11.0"
+okhttp3LogVersion = "4.12.0"
+mmkvVersion = "1.3.9"
+exoPlayerVersion = "1.4.1"
+glideVersion = "4.16.0"
+tbssdkVersion = "44132"
+roomKtxVersion = "2.6.1"
+viewModelKtx = "2.6.2"
+liveDataKtx = "2.6.2 "
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# 网络请求,解析,日志打印
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+okhttp3Log = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3LogVersion" }
+#轻量化数据存储
+mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkvVersion" }
+# EXO音视频播放器组件
+exoPlayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "exoPlayerVersion" }
+exoPlayerDash = { group = "androidx.media3", name = "media3-exoplayer-dash", version.ref = "exoPlayerVersion" }
+exoPlayerUi = { group = "androidx.media3", name = "media3-ui", version.ref = "exoPlayerVersion" }
+#图片加载框架
+glide= { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+glideCompiler= { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glideVersion" }
+#腾讯x5
+tbssdk = { group = "com.tencent.tbs", name = "tbssdk", version.ref = "tbssdkVersion" }
+#轻量化数据库框架
+roomKtx = { group = "androidx.room", name = "room-runtime", version.ref = "roomKtxVersion" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomKtxVersion" }
+
+viewModelKtx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewModelKtx" }
+liveDataKtx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "liveDataKtx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
